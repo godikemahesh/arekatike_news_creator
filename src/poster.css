@@ -1,0 +1,259 @@
+/* ===== The 1200px newspaper card (exported as image) ===== */
+.pz {
+  position: relative;
+  background: #ffffff;
+  color: #111;
+  font-family: 'Noto Sans Telugu', sans-serif;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ----- masthead ----- */
+.pz-header {
+  position: relative;
+  height: 272px;
+  overflow: hidden;
+  font-family: 'Noto Sans Telugu', sans-serif;
+}
+.pz-h-sky {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 228px;
+  background: linear-gradient(
+    180deg,
+    #34bdfb 0%,
+    #8bd5fd 18%,
+    #d6f1f7 36%,
+    #f9fdf3 52%,
+    #fefce2 66%,
+    #fbf3ab 80%,
+    #fce68e 89%,
+    #fdf3c8 96%,
+    #f4fff0 100%
+  );
+}
+.pz-h-sun {
+  position: absolute;
+  left: -60px;
+  top: -40px;
+  width: 420px;
+  height: 320px;
+  background: radial-gradient(closest-side, rgba(255, 236, 140, 0.55), rgba(255, 236, 140, 0));
+}
+.pz-h-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 214px;
+  height: 222px;
+}
+.pz-h-charminar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 201px;
+  height: 207px;
+}
+.pz-h-titles {
+  position: absolute;
+  left: 218px;
+  right: 206px;
+  top: 4px;
+  text-align: center;
+}
+.pz-h-title {
+  color: #e8141b;
+  font-weight: 900;
+  line-height: 1.18;
+  letter-spacing: 1px;
+}
+.pz-h-sub {
+  color: #1c3a9e;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-top: -6px;
+  letter-spacing: 1px;
+}
+.pz-h-strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 44px;
+  border-top: 3px solid #f4fff0;
+  background: linear-gradient(90deg, #12c03a 0%, #08801f 14%, #046d17 50%, #08801f 86%, #12c03a 100%);
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.pz-h-date {
+  width: 222px;
+  flex: none;
+  padding-left: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+.pz-h-tag {
+  flex: 1;
+  padding-right: 250px;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  white-space: nowrap;
+  line-height: 1.2;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.35);
+}
+.pz-h-badge {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  width: 228px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  background: #ffffff;
+  border: 3px solid #1c3a9e;
+  border-radius: 12px;
+  color: #1c3a9e;
+  font-weight: 800;
+  text-align: center;
+  line-height: 1.2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* top block */
+.pz-top {
+  padding: 14px 14px 0;
+}
+.pz-top-side {
+  display: grid;
+  grid-template-columns: 396px 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+.pz-top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  min-width: 0;
+  min-height: 440px;
+}
+.pz-top-wide {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* headline */
+.pz-headline {
+  position: relative;
+  text-align: center;
+  line-height: 1.32;
+}
+.pz-headline-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.pz-brush {
+  position: absolute;
+  left: -18px;
+  right: -18px;
+  top: -8px;
+  bottom: -8px;
+  width: calc(100% + 36px);
+  height: calc(100% + 16px);
+  z-index: 0;
+  overflow: visible;
+}
+.pz-headline-text {
+  position: relative;
+  z-index: 1;
+}
+.pz-headline-rule {
+  height: 6px;
+  width: 38%;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* sub heading */
+.pz-sub {
+  border-radius: 14px;
+  padding: 14px 24px 16px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.45;
+  white-space: pre-line;
+}
+
+/* photo */
+.pz-photo {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid;
+  border-radius: 6px;
+  min-height: 300px;
+  background: #eee;
+}
+.pz-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* article */
+.pz-article {
+  padding: 24px 22px 34px;
+  line-height: 1.62;
+  column-gap: 64px;
+  text-align: justify;
+  color: #141414;
+}
+.pz-article p {
+  margin: 0;
+}
+.pz-article > p:not(.first) {
+  text-indent: 2em;
+}
+.pz-dateline {
+  font-weight: 800;
+}
+.pz-empty {
+  text-align: center;
+  color: #9a9a9a;
+  font-size: 34px;
+  padding: 70px 20px;
+}
+.pz-box {
+  margin-top: 20px;
+  padding: 20px 26px 24px;
+  border: 2px solid;
+  border-radius: 18px;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+.pz-box-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.08em;
+  line-height: 1.42;
+  margin-bottom: 12px;
+}
+.pz-box-bar {
+  display: block;
+  width: 36%;
+  height: 4px;
+  border-radius: 2px;
+  margin: 8px auto 0;
+}
+.pz-box p {
+  text-indent: 2em;
+}
